@@ -24,7 +24,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['./plugins/vuetify.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -57,6 +57,10 @@ export default {
         },
       },
     },
+  },
+  // https://storybook.nuxtjs.org/api/options/#decorators
+  storybook: {
+    decorators: [`<v-app><div><story/></div></v-app>`],
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
