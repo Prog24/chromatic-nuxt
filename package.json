@@ -12,7 +12,8 @@
     "lint": "yarn lint:js && yarn lint:prettier",
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix",
     "prepare": "husky install",
-    "storybook": "nuxt storybook"
+    "storybook": "nuxt storybook",
+    "build-storybook": "nuxt storybook build"
   },
   "lint-staged": {
     "*.{js,ts,vue}": "eslint --cache",
