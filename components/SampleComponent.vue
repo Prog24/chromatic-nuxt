@@ -12,6 +12,6 @@ export default class SampleComponent extends Vue {}
 .hoge {
   border: 1px solid red;
   width: 100px;
-  height: 40px;
+  height: 30px;
 }
 </style>
